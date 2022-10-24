@@ -22,3 +22,13 @@ You can write Javascript to define the infrastructure, or even use for loops. Th
 * `cdk deploy`      deploy this stack to your default AWS account/region
 * `cdk diff`        compare deployed stack with current state
 * `cdk synth`       emits the synthesized CloudFormation template
+
+## Deployment Notes
+
+If you were to run `cdk deploy`, it will create the resources, the `CloudStack`, `CloudWatch` logs, and `S3 Buckets`.
+
+Running `cdk destroy` removes the resources.
+
+> **Note (a):** After `cdk destroy`, the Lambda function created will generate CloudWatch logs that are permanently retained. These will not be tracked by CloudFormation since they are not part of the stack, so the logs will still persist. You will have to manually delete these in the console if desired.
+
+> **Note (b):** The bootstrapping stack created through `cdk bootstrap` command still exists. If you plan on using the CDK in the future (we hope you do!) do not delete this stack. If you would like to delete this stack, it will have to be done through the CloudFormation console. Head over to the CloudFormation console and delete the CDKToolkit stack. The S3 bucket created will be retained by default, so if you want to avoid any unexpected charges, be sure to head to the S3 console and empty + delete the bucket generated from bootstrapping.
