@@ -1,9 +1,14 @@
-# Welcome to your CDK TypeScript project
+# AWS CDK TypeScript Project
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`CdkWorkshopStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+Hello world project for Introduction to the AWS CDK - [Workshop](https://cdkworkshop.com)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Date: October 22nd, 2022.
+
+## What is AWS CDK?
+
+> AWS Cloud Development Kit (CDK) is an open-source software development framework used to model and provision your cloud application resources with familiar programming languages.
+
+Instead of manually deploying/provisioning different AWS is the browser console, use infrastructure as code to take care of this. This defines what to services to deploy, how they communicate, and what permissions they need.
 
 ## Useful commands
 
