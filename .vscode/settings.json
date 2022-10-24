@@ -14,5 +14,13 @@
     "**/*.js.map": {
       "when": "$(basename)"
     }
+  },
+  "typescript.check.tscVersion": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.autoFixOnSave": true,
+  "tslint.autoFixOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   }
 }
