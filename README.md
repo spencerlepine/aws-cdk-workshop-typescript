@@ -1,6 +1,8 @@
-# AWS CDK TypeScript Project
+# AWS CDK TypeScript Workshop Project
 
-Hello world project for Introduction to the AWS CDK - [Workshop](https://cdkworkshop.com)
+Hello world project for the  **Introduction to the AWS CDK - [Workshop](https://cdkworkshop.com)**
+
+The deployable application is an API endpoint connected to lambda functions, which interact with a simple DynamoDB database to track endpoint request hits.
 
 Date: October 22nd, 2022.
 
