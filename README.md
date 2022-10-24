@@ -32,3 +32,10 @@ Running `cdk destroy` removes the resources.
 > **Note (a):** After `cdk destroy`, the Lambda function created will generate CloudWatch logs that are permanently retained. These will not be tracked by CloudFormation since they are not part of the stack, so the logs will still persist. You will have to manually delete these in the console if desired.
 
 > **Note (b):** The bootstrapping stack created through `cdk bootstrap` command still exists. If you plan on using the CDK in the future (we hope you do!) do not delete this stack. If you would like to delete this stack, it will have to be done through the CloudFormation console. Head over to the CloudFormation console and delete the CDKToolkit stack. The S3 bucket created will be retained by default, so if you want to avoid any unexpected charges, be sure to head to the S3 console and empty + delete the bucket generated from bootstrapping.
+
+## Further Learning
+
+If you are interested in testing: The [CDK Developer Guide](https://docs.aws.amazon.com/cdk/latest/guide/testing.html) has a good guide on testing constructs. For this section of the workshop we are going to use the Fine-Grained Assertions and Validation type tests.
+
+If you are interested in continuous deployment: [GETTING STARTED WITH PIPELINES
+](https://cdkworkshop.com/20-typescript/70-advanced-topics/200-pipelines/1000-setting-up.html)
